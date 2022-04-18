@@ -22,42 +22,26 @@ def write(data, file_path):
 user_dict = []
 books_dict = []
 n = 0
-x = 0
 
 """crate user dictionary"""
 for i in read_json('../3_test data/users.json'):
     user_dict.append(
-        {'name': i['name'], 'gender': i['gender'], 'age': i['age'], 'address': i['address']})
-    user_dict.append('books')
+        {'name': i['name'], 'gender': i['gender'], 'age': i['age'], 'address': i['address'], 'books': []})
+
+
 
 """create book dictionary"""
 for i in read_csv('../3_test data/books.csv'):
     books_dict.append({'title': i['Title'], 'author': i['Author'], 'pages': i['Pages'], 'genre': i['Genre']})
 
 """books + users"""
-# w = list(user_dict[0].items())
-# w.append(books_dict[0])
-# w.append(books_dict[1])
-# print(w)
-# write(w, '../3_test data/result.json')
-
-
-for books in books_dict:
-    print(x)
-    """Я понял, что  первый цикл проходит ноърмально, но на втором цикле на этой строке. он почему-то не берет новго пользователя,
-     а обращается внутри выбранного пользователя к конкретной строке по индексу, не знаю как это обойти и почему вообще так. """
-    new_user = user_dict[x]
-    print(new_user)
-    print(type(new_user))
-    new_user.append(books_dict[n])
-    print(type(new_user))
-    new_user = list(new_user.items())
-    print(new_user)
-    print(type(new_user))
-    new_user.append(books_dict[n])
-    n += 1
+print(type(user_dict[0]['books']))
+num = len(user_dict)
+x = 0
+for book in books_dict:
+    user_dict[x]["books"].append(book)
     x += 1
-
-    if x == 28:
+    if x >= num:
         x = 0
-write(new_user, '../3_test data/result.json')
+
+write(user_dict, '../3_test data/result.json')
