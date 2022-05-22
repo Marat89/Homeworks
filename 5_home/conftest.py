@@ -23,7 +23,9 @@ def driver(request):
         browser = webdriver.Chrome(executable_path=f"{drivers}/chromedriver")
     elif browser_name == "firefox":
         browser = webdriver.Firefox(executable_path=f"{drivers}/geckodriver")
+    elif browser_name == "opera":
+        browser = webdriver.Opera(executable_path=f"{drivers}/operadriver")
     else:
         print("Wrong browser")
-    return browser
+    yield browser
     browser.close()
