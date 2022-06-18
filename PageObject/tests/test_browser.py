@@ -54,6 +54,7 @@ def test_register_new_user(driver, base_url):
     driver.maximize_window()
     MainPage(driver).swith_to_register_user()
     UserRegistration(driver).fill_in_the_field()
+    UserRegistration(driver).checking_registration()
     time.sleep(3)
 
 

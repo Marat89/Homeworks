@@ -3,9 +3,11 @@ from .BasePage import BasePage
 import random
 import string
 
+
 def generate_random_string(length):
     letters = string.ascii_lowercase
     rand_string = ''.join(random.choice(letters) for i in range(length))
+    return rand_string
 
 
 class UserRegistration(BasePage):
@@ -35,10 +37,7 @@ class UserRegistration(BasePage):
         self._verify_element_presence(self.confirm_password).send_keys('123456')
         self._verify_element_presence(self.agree_privacy).click()
         self._verify_element_presence(self.btn_continue).click()
+
     def checking_registration(self):
-        self._verify_element_presence(self.succes_registration)
-
-
-
-
+        assert self.driver.title == "Your Account Has Been Created!"
 

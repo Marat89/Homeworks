@@ -47,4 +47,4 @@ class AdminPage(BasePage):
         self._select_elements_by_index(self.first_element_in_search, 1).click()
         self._verify_button(self.btn_delete).click()
         self._accept_allert(self)
-        # (self.driver.switch_to.alert).accept
+        self._accept_allert()
