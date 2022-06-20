@@ -1,5 +1,3 @@
-import time
-
 from selenium.webdriver.common.by import By
 from .BasePage import BasePage
 
@@ -10,7 +8,6 @@ class AutorizationAdminPage(BasePage):
     forgoten_password = (By.CSS_SELECTOR, '.help-block')
     btn_login = (By.CSS_SELECTOR, '.fa-key')
     logo = (By.CSS_SELECTOR, '.navbar-brand')
-
 
     def verify_page(self):
         self._verify_element_presence(self.username)
@@ -23,5 +20,3 @@ class AutorizationAdminPage(BasePage):
         self._verify_element_presence(self.username).send_keys("user")
         self._verify_element_presence(self.password).send_keys("bitnami")
         self._verify_button(self.btn_login).click()
-
-

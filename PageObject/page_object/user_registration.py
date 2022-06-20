@@ -39,5 +39,4 @@ class UserRegistration(BasePage):
         self._verify_element_presence(self.btn_continue).click()
 
     def checking_registration(self):
-        assert self.driver.title == "Your Account Has Been Created!"
-
+        assert self.browser.title == "Your Account Has Been Created!"
