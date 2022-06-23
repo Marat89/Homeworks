@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 from .BasePage import BasePage
 
@@ -16,8 +18,9 @@ class AdminPage(BasePage):
     searh_name = (By.CSS_SELECTOR, '[placeholder = "Product Name"]')
     btn_filter = (By.CSS_SELECTOR, '#button-filter')
     search_body = (By.XPATH, '//tr')
-    first_element_in_search = (By.CSS_SELECTOR, '[type="checkbox"]')
+    first_element_in_search = (By.XPATH, '//tbody//input')
     btn_delete = (By.CSS_SELECTOR, '.btn-danger')
+    no_result_search = (By.XPATH, '//td[text()="No results!"]')
 
     def create_product(self):
         self._verify_element_presence(self.catalog).click()
@@ -39,12 +42,14 @@ class AdminPage(BasePage):
         if len(self._all_elements(self.search_body)) < 2:
             raise AssertionError("Object not created")
         if len(self._all_elements(self.search_body)) > 2:
-            raise AssertionError("Too many objects")
+            raise AssertionError("Too many objects in search list")
 
     def delete_product(self):
-        self._verify_element_presence(self.searh_name).send_keys("test_product1")
-        self._verify_button(self.btn_filter).click()
-        self._select_elements_by_index(self.first_element_in_search, 1).click()
+        self._verify_element_presence(self.first_element_in_search).click()
         self._verify_button(self.btn_delete).click()
-        self._accept_allert(self)
-        # (self.driver.switch_to.alert).accept
+        self._accept_allert()
+
+    def checking_product_is_delete(self):
+        self._verify_element_presence(self.no_result_search)
+
+
