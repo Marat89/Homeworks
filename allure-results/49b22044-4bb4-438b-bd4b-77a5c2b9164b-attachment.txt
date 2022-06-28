@@ -1,0 +1,12 @@
+INFO     conftest:conftest.py:19 I'm navigating to http://192.168.72.130:8081//smartphone and 
+INFO     conftest:conftest.py:22 I'm on http://192.168.72.130:8081//smartphone
+INFO     conftest:conftest.py:25 I'm looking for '#content' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#content' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#list-view' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#list-view' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '.product-layout' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '.product-layout' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '.swiper-viewport' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '.swiper-viewport' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for './/*[@class="col-md-4 col-xs-6"]//select' with 'xpath'
+INFO     conftest:conftest.py:28 I've found './/*[@class="col-md-4 col-xs-6"]//select' with 'xpath'

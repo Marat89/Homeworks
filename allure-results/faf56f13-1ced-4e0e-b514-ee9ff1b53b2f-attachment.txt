@@ -1,0 +1,12 @@
+INFO     conftest:conftest.py:19 I'm navigating to http://192.168.72.130:8081/index.php?route=account/register and 
+INFO     conftest:conftest.py:22 I'm on http://192.168.72.130:8081/index.php?route=account/register
+INFO     conftest:conftest.py:25 I'm looking for '#input-firstname' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-firstname' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#input-lastname' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-lastname' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#input-email' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-email' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#input-telephone' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-telephone' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '.btn-primary' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '.btn-primary' with 'css selector'

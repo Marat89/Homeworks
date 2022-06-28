@@ -1,0 +1,52 @@
+INFO     conftest:conftest.py:19 I'm navigating to http://192.168.72.130:8081//admin and 
+INFO     conftest:conftest.py:22 I'm on http://192.168.72.130:8081//admin
+INFO     conftest:conftest.py:25 I'm looking for '//*[@name="username"]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//*[@name="username"]' with 'xpath'
+INFO     conftest:conftest.py:25 I'm looking for '//*[@name="password"]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//*[@name="password"]' with 'xpath'
+INFO     conftest:conftest.py:25 I'm looking for '.fa-key' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '.fa-key' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="809538b1-32ec-43b5-9128-a7841af5ca30")>
+INFO     conftest:conftest.py:25 I'm looking for 'Catalog' with 'link text'
+INFO     conftest:conftest.py:28 I've found 'Catalog' with 'link text'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="40cdf900-36f5-46ef-959a-b21e99c34957")>
+INFO     conftest:conftest.py:25 I'm looking for 'Products' with 'link text'
+INFO     conftest:conftest.py:25 I'm looking for 'Products' with 'link text'
+INFO     conftest:conftest.py:28 I've found 'Products' with 'link text'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="9c0edd02-5b7f-4dc5-a125-3fde6a77e756")>
+INFO     conftest:conftest.py:25 I'm looking for '[data-original-title="Add New"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[data-original-title="Add New"]' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="70175b37-56c1-4680-a051-bbf084aef4b2")>
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder = "Product Name"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder = "Product Name"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder = "Meta Tag Title"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder = "Meta Tag Title"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for 'Data' with 'link text'
+INFO     conftest:conftest.py:28 I've found 'Data' with 'link text'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="88cd8d9f-5c2e-4401-bcf8-b4f437206bbf")>
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder = "Model"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder = "Model"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder = "Price"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder = "Price"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder = "Quantity"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder = "Quantity"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '[data-original-title="Save"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[data-original-title="Save"]' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="b3d95739-b316-4c6a-93aa-ba7e6527ae66")>
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder = "Product Name"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder = "Product Name"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#button-filter' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#button-filter' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="2ac15195-638b-4952-94ed-4c929e4f1d69")>
+INFO     conftest:conftest.py:25 I'm looking for '//tr' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//tr' with 'xpath'
+INFO     conftest:conftest.py:25 I'm looking for '//tr' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//tr' with 'xpath'
+INFO     conftest:conftest.py:25 I'm looking for '//tbody//input' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//tbody//input' with 'xpath'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="a71bc98f-c18a-43bb-8017-76a94b10c60c")>
+INFO     conftest:conftest.py:25 I'm looking for '.btn-danger' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '.btn-danger' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="03a905cd59845c9d792eb885dec6d30f", element="3c7622ec-9a37-4229-8390-1d450d28b6d9")>
+INFO     conftest:conftest.py:25 I'm looking for '//td[text()="No results!"]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//td[text()="No results!"]' with 'xpath'
