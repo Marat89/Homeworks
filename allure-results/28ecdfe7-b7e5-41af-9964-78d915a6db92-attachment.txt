@@ -1,0 +1,26 @@
+INFO     conftest:conftest.py:19 I'm navigating to http://192.168.72.130:8081/ and 
+INFO     conftest:conftest.py:22 I'm on http://192.168.72.130:8081/
+INFO     conftest:conftest.py:25 I'm looking for '[class="fa fa-caret-down"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[class="fa fa-caret-down"]' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="9180d0fb0e0a575b0d398d3d040e40ad", element="094a48bb-0026-4a9e-b870-a6f9585faab7")>
+INFO     conftest:conftest.py:25 I'm looking for 'EUR' with 'name'
+INFO     conftest:conftest.py:28 I've found 'EUR' with 'name'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="9180d0fb0e0a575b0d398d3d040e40ad", element="1f202e0d-d77e-450f-a7be-f699cb47becc")>
+INFO     conftest:conftest.py:25 I'm looking for '//strong[text()="€"]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//strong[text()="€"]' with 'xpath'
+INFO     conftest:conftest.py:25 I'm looking for '[class="fa fa-caret-down"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[class="fa fa-caret-down"]' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="9180d0fb0e0a575b0d398d3d040e40ad", element="33b1dd91-d326-40fc-af19-313b8e13c5ac")>
+INFO     conftest:conftest.py:25 I'm looking for 'GBP' with 'name'
+INFO     conftest:conftest.py:28 I've found 'GBP' with 'name'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="9180d0fb0e0a575b0d398d3d040e40ad", element="c0349400-3c56-4dfd-883b-eae45cea5944")>
+INFO     conftest:conftest.py:25 I'm looking for '//strong[text()="£"]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//strong[text()="£"]' with 'xpath'
+INFO     conftest:conftest.py:25 I'm looking for '[class="fa fa-caret-down"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[class="fa fa-caret-down"]' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="9180d0fb0e0a575b0d398d3d040e40ad", element="a992ccce-312e-43eb-a879-1326d8816be5")>
+INFO     conftest:conftest.py:25 I'm looking for 'USD' with 'name'
+INFO     conftest:conftest.py:28 I've found 'USD' with 'name'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="9180d0fb0e0a575b0d398d3d040e40ad", element="54f7dc34-f00b-459f-9173-3c1e30edfc45")>
+INFO     conftest:conftest.py:25 I'm looking for '//strong[text()="$"]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found '//strong[text()="$"]' with 'xpath'

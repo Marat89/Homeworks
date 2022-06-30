@@ -1,0 +1,26 @@
+INFO     conftest:conftest.py:19 I'm navigating to http://192.168.72.130:8081/ and 
+INFO     conftest:conftest.py:22 I'm on http://192.168.72.130:8081/
+INFO     conftest:conftest.py:25 I'm looking for '[class="fa fa-user"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[class="fa fa-user"]' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="d09db885a36cbb2c9675541a342d2217", element="241d4441-6f77-4b0e-bf4e-ea6f1ac50c95")>
+INFO     conftest:conftest.py:25 I'm looking for 'Register' with 'link text'
+INFO     conftest:conftest.py:28 I've found 'Register' with 'link text'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="d09db885a36cbb2c9675541a342d2217", element="1c52f036-7e04-4ce0-93ab-a913385632fe")>
+INFO     conftest:conftest.py:25 I'm looking for '#input-firstname' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-firstname' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#input-lastname' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-lastname' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#input-email' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-email' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#input-telephone' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#input-telephone' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder="Password"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder="Password"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '[placeholder="Password Confirm"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[placeholder="Password Confirm"]' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '[name="agree"]' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '[name="agree"]' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="d09db885a36cbb2c9675541a342d2217", element="df1f5d2a-d4a8-460b-a3fa-af13e729519d")>
+INFO     conftest:conftest.py:25 I'm looking for '.btn-primary' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '.btn-primary' with 'css selector'
+INFO     conftest:conftest.py:31 I'm clicking <selenium.webdriver.remote.webelement.WebElement (session="d09db885a36cbb2c9675541a342d2217", element="bbbd9048-7198-4075-a123-479ffb200bd5")>

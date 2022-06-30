@@ -1,0 +1,12 @@
+INFO     conftest:conftest.py:19 I'm navigating to http://192.168.72.130:8081/ and 
+INFO     conftest:conftest.py:22 I'm on http://192.168.72.130:8081/
+INFO     conftest:conftest.py:25 I'm looking for '.pull-left' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '.pull-left' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#top-links' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#top-links' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for '#cart' with 'css selector'
+INFO     conftest:conftest.py:28 I've found '#cart' with 'css selector'
+INFO     conftest:conftest.py:25 I'm looking for './/ul[@class ="nav navbar-nav"]/li[1]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found './/ul[@class ="nav navbar-nav"]/li[1]' with 'xpath'
+INFO     conftest:conftest.py:25 I'm looking for './/*[@class="product-thumb transition"]/div[@class="button-group"]' with 'xpath'
+INFO     conftest:conftest.py:28 I've found './/*[@class="product-thumb transition"]/div[@class="button-group"]' with 'xpath'
