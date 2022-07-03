@@ -5,7 +5,7 @@ import logging
 
 from selenium.webdriver.support.events import EventFiringWebDriver, AbstractEventListener
 
-DRIVERS = os.path.expanduser("~/Documents/Developer/drivers")
+DRIVERS = os.path.expanduser("~/Документы/Developer/drivers")
 
 logger = logging.getLogger(__name__)
 
@@ -36,16 +36,13 @@ class MyListener(AbstractEventListener):
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
-    parser.addoption("--executor", action="store", default="http://192.168.72.130")
-    parser.addoption("--log_level", action="store", default="DEBUG")
-
-
-# parser.addoption("--run", action="store", default="local")
+    parser.addoption("--executor", action="store", default="172.20.10.4")
+    parser.addoption("--run", action="store", default="local")
 
 
 @pytest.fixture
 def base_url(request):
-    url = request.config.getoption("--url", default="http://192.168.72.130:8081/")
+    url = request.config.getoption("--url", default="http://172.20.10.4:8081/")
     return url
 
 
@@ -53,22 +50,28 @@ def base_url(request):
 def browser(request):
     browser = request.config.getoption("--browser")
     executor = request.config.getoption("--executor")
-    # run = request.config.getoption("--run")
-    # if run == "local":
-    if browser == "chrome":
-        driver = webdriver.Chrome(executable_path=f"{DRIVERS}/chromedriver")
-    elif browser == "firefox":
-        driver = webdriver.Firefox(executable_path=f"{DRIVERS}/geckodriver")
-    # if run == "remote":
-    driver = webdriver.Remote(
-        command_executor=f"http://{executor}:4444/wd/hub",
-        desired_capabilities={"browserName": browser, "platformName": "LINUX"}
-    )
-    # else:
-    #   raise ValueError("Wrong attribute")
 
-    #driver = EventFiringWebDriver(driver, MyListener())
-    #driver.test_name = request.node.name
+    executor_url = f"http://{executor}:4444/wd/hub"
+    run = request.config.getoption("--run")
+    if run == "local":
+        if browser == "chrome":
+            driver = webdriver.Chrome(executable_path=f"{DRIVERS}/chromedriver")
+        elif browser == "firefox":
+            driver = webdriver.Firefox(executable_path=f"{DRIVERS}/geckodriver")
+        driver.maximize_window()
+    if run == "remote":
+        caps = {
+            "browserName": browser,
+            "screenResolution": "1920x1080"
+
+        }
+        driver = webdriver.Remote(
+            command_executor=executor_url,
+            desired_capabilities=caps
+        )
+
+    driver = EventFiringWebDriver(driver, MyListener())
+    driver.test_name = request.node.name
 
     def fin():
         driver.quit()
