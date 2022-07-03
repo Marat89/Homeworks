@@ -67,7 +67,6 @@ def test_add_product(browser, base_url):
                4. Проверка создания продукта
                5. Удаление продукта"""
     browser.get(f"{base_url}/admin")
-    browser.maximize_window()
     AutorizationAdminPage(browser).admin_autorization()
     AdminPage(browser).create_product()
     AdminPage(browser).fill_in_the_field()
@@ -87,7 +86,6 @@ def test_delete_product(browser, base_url):
                   6. Проверка удаления продукта"""
 
     browser.get(f"{base_url}/admin")
-    browser.maximize_window()
     AutorizationAdminPage(browser).admin_autorization()
     AdminPage(browser).create_product()
     AdminPage(browser).fill_in_the_field()
@@ -103,7 +101,6 @@ def test_register_new_user(browser, base_url):
                   2. Заполнение обязательных полей
                   3. Проверка регистрации пользователя"""
     browser.get(base_url)
-    browser.maximize_window()
     MainPage(browser).swith_to_register_user()
     UserRegistration(browser).fill_in_the_field()
     UserRegistration(browser).checking_registration()
@@ -117,5 +114,4 @@ def test_swith_currency(browser, base_url):
                   3. Переключение валюты на доллар
                   """
     browser.get(base_url)
-    browser.maximize_window()
     MainPage(browser).swich_currency()

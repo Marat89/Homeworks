@@ -1,1 +1,0 @@
-INFO     conftest:conftest.py:19 I'm navigating to http://192.168.72.130:8081//admin and
