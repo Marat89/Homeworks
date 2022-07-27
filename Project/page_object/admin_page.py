@@ -1,5 +1,6 @@
 import time
 
+import allure
 from selenium.webdriver.common.by import By
 from .BasePage import BasePage
 
@@ -40,8 +41,16 @@ class AdminPage(BasePage):
         self._verify_element_presence(self.searh_name).send_keys("test_product1")
         self._verify_button(self.btn_filter).click()
         if len(self._all_elements(self.search_body)) < 2:
+            allure.attach(
+                body=self.browser.get_screenshot_as_png(),
+                name="screenshot_image",
+                attachment_type=allure.attachment_type.PNG)
             raise AssertionError("Object not created")
         if len(self._all_elements(self.search_body)) > 2:
+            allure.attach(
+                body=self.browser.get_screenshot_as_png(),
+                name="screenshot_image",
+                attachment_type=allure.attachment_type.PNG)
             raise AssertionError("Too many objects in search list")
 
     def delete_product(self):
