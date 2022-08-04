@@ -38,6 +38,7 @@ def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
     parser.addoption("--executor", action="store", default="172.17.0.1")
     parser.addoption("--run", action="store", default="remote")
+    parser.addoption("--url", action="store", default="http://192.168.72.131:8081/")
 
 
 @pytest.fixture
