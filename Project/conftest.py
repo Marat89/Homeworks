@@ -5,7 +5,7 @@ import logging
 
 from selenium.webdriver.support.events import EventFiringWebDriver, AbstractEventListener
 
-DRIVERS = os.path.expanduser("~/Документы/Developer/drivers")
+DRIVERS = os.path.expanduser("~/Downloads")
 
 logger = logging.getLogger(__name__)
 
@@ -36,13 +36,14 @@ class MyListener(AbstractEventListener):
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
-    parser.addoption("--executor", action="store", default="172.20.10.4")
-    parser.addoption("--run", action="store", default="local")
+    parser.addoption("--executor", action="store", default="172.17.0.1")
+    parser.addoption("--run", action="store", default="remote")
+    parser.addoption("--url", action="store", default="http://192.168.72.131:8081/")
 
 
 @pytest.fixture
 def base_url(request):
-    url = request.config.getoption("--url", default="http://172.20.10.4:8081/")
+    url = request.config.getoption("--url", default="http://192.168.72.131:8081/")
     return url
 
 
