@@ -38,7 +38,8 @@ def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
     parser.addoption("--executor", action="store", default="172.17.0.1")
     parser.addoption("--run", action="store", default="remote")
-    parser.addoption("--url", action="store", default="http://192.168.72.131:8081/")
+    parser.addoption("--url", action="store", default="http://172.17.0.1:8081/")
+    parser.addoption("--bv", action="store", default="103.0")
 
 
 @pytest.fixture
@@ -51,6 +52,7 @@ def base_url(request):
 def browser(request):
     browser = request.config.getoption("--browser")
     executor = request.config.getoption("--executor")
+    version = request.config.getoption("--bv")
 
     executor_url = f"http://{executor}:4444/wd/hub"
     run = request.config.getoption("--run")
@@ -63,6 +65,7 @@ def browser(request):
     if run == "remote":
         caps = {
             "browserName": browser,
+            "browserVersion": version,
             "screenResolution": "1920x1080"
 
         }
