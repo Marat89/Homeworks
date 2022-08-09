@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ["pytest"]
+ENTRYPOINT ["pytest", "Project"]
