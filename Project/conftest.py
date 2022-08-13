@@ -36,7 +36,7 @@ class MyListener(AbstractEventListener):
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
-    parser.addoption("--executor", action="store", default="http://localhost")
+    parser.addoption("--executor", action="store", default="localhost")
     parser.addoption("--run", action="store", default="remote")
     parser.addoption("--url", action="store", default="http://192.168.72.128:8081/")
     parser.addoption("--bv")
