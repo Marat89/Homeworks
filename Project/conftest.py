@@ -36,15 +36,15 @@ class MyListener(AbstractEventListener):
 
 def pytest_addoption(parser):
     parser.addoption("--browser", action="store", default="chrome")
-    parser.addoption("--executor", action="store", default="172.17.0.1")
+    parser.addoption("--executor", action="store", default="http://localhost")
     parser.addoption("--run", action="store", default="remote")
-    parser.addoption("--url", action="store", default="http://127.0.0.1:8081/")
+    parser.addoption("--url", action="store", default="http://192.168.72.128:8081/")
     parser.addoption("--bv")
 
 
 @pytest.fixture
 def base_url(request):
-    url = request.config.getoption("--url", default="http://127.0.0.1:8081/")
+    url = request.config.getoption("--url", default="http://192.168.72.128:8081/")
     return url
 
 
